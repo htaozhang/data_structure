@@ -6,8 +6,8 @@
 //  Copyright © 2016年 htaoZhang. All rights reserved.
 //
 
-#ifndef heap_h
-#define heap_h
+#ifndef _heap_h_
+#define _heap_h_
 
 #include <vector>
 
@@ -16,14 +16,15 @@
 #define RIGHT(i) ((i) << 1 | 1)
 
 template<typename T>
-class heap
+class heap 
 {
 public:
     Heap()
     {
         
     }
-    explicit Heap(size)
+    explicit Heap(int size)
+        : size_(size)
     {
         
     }
@@ -42,9 +43,10 @@ public:
         shift_down(0);
         return true;
     }
-    T top()
-    {
-        return elements_.front();
+    
+    T top() 
+    { 
+        return elements_.front(); 
     }
     
 private:
@@ -53,7 +55,7 @@ private:
         return true;
     }
     
-    void swap(T& lhs, T&rhs)
+    void swap(T& lhs, T&rhs) 
     {
         T tmp = lhs; lhs = rhs; rhs = tmp;
     }
@@ -94,4 +96,6 @@ private:
     size_t size_;
 };
 
-#endif /* heap_h */
+#endif /* _heap_h_ */
+
+
