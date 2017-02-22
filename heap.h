@@ -6,8 +6,8 @@
 //  Copyright © 2016年 htaoZhang. All rights reserved.
 //
 
-#ifndef _heap_h_
-#define _heap_h_
+#ifndef __heap_h
+#define __heap_h
 
 #include <vector>
 
@@ -96,6 +96,6 @@ private:
     size_t size_;
 };
 
-#endif /* _heap_h_ */
+#endif /* __heap_h */
 
 
